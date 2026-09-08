@@ -11,15 +11,22 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-<!-- Vendor CSS -->
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
-<!-- Template CSS -->
-<link rel="stylesheet" href="assets/css/style.css?v=1.1">
-<!-- Ewan: Arabic + RTL layout fixes only -->
-<link rel="stylesheet" href="assets/css/ewan-custom.css?v=1.0">
+<!-- Vendor CSS - Async Load -->
+<link rel="preload" href="assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css"></noscript>
+
+<link rel="preload" href="assets/css/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/bootstrap-icons.min.css"></noscript>
+
+<!-- Template CSS - Async Load -->
+<link rel="preload" href="assets/css/style.css?v=1.1" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/style.css?v=1.1"></noscript>
+
+<!-- Ewan: Arabic + RTL layout fixes only - Async Load -->
+<link rel="preload" href="assets/css/ewan-custom.css?v=1.0" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/ewan-custom.css?v=1.0"></noscript>
 </head>
 <body>
 
@@ -134,28 +141,40 @@
       <div class="process-strip flex-grow-1 justify-content-center">
         <div class="polaroid" style="--rot:-4deg;">
           <span class="step-num">1</span>
-          <img src="assets/img/photos/roasting.jpg" alt="التحميص">
+          <picture>
+    <source srcset="assets/img/photos/roasting.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/roasting.jpg" alt="التحميص" width="400" height="300">
+  </picture>
           <h6>التحميص</h6>
           <p>يُحمَّص يومياً بكميات صغيرة.</p>
         </div>
         <div class="process-connector"></div>
         <div class="polaroid" style="--rot:3deg;">
           <span class="step-num">2</span>
-          <img src="assets/img/photos/coffee-grounds.jpg" alt="الطحن">
+          <picture>
+    <source srcset="assets/img/photos/coffee-grounds.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/coffee-grounds.jpg" alt="الطحن" width="400" height="300">
+  </picture>
           <h6>الطحن</h6>
           <p>يُطحن طازجاً، كوباً بكوب.</p>
         </div>
         <div class="process-connector"></div>
         <div class="polaroid" style="--rot:-3deg;">
           <span class="step-num">3</span>
-          <img src="assets/img/photos/pourover.jpg" alt="التحضير">
+          <picture>
+    <source srcset="assets/img/photos/pourover.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/pourover.jpg" alt="التحضير" width="400" height="300">
+  </picture>
           <h6>التحضير</h6>
           <p>تحضير بطيء بطريقة الصب اليدوي.</p>
         </div>
         <div class="process-connector"></div>
         <div class="polaroid" style="--rot:4deg;">
           <span class="step-num">4</span>
-          <img src="assets/img/photos/turkish-coffee-1.jpg" alt="التقديم">
+          <picture>
+    <source srcset="assets/img/photos/turkish-coffee-1.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/turkish-coffee-1.jpg" alt="التقديم" width="400" height="300">
+  </picture>
           <h6>التقديم</h6>
           <p>يُقدَّم بلمسة من الحب.</p>
         </div>
@@ -200,12 +219,30 @@
 <section class="section">
   <div class="container">
     <div class="res-grid">
-      <div class="res-cell"><img src="assets/img/photos/latte-plants-1.jpg" alt="فن اللاتيه"></div>
-<div class="res-cell"><img src="assets/img/photos/latte-plants-1.jpg" alt="فن اللاتيه"></div>
-      <div class="res-cell"><img src="assets/img/photos/cinnamon-rolls-2.jpg" alt="معجنات طازجة"></div>
-      <div class="res-cell"><img src="assets/img/photos/latte-plants-2.jpg" alt="ديكور المقهى"></div>
-<div class="res-cell"><img src="assets/img/photos/cinnamon-rolls-2.jpg" alt="معجنات طازجة"></div>
-      <div class="res-cell"><img src="assets/img/photos/empanada.jpg" alt="مخبوزات طازجة"></div>
+      <div class="res-cell"><picture>
+    <source srcset="assets/img/photos/latte-plants-1.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/latte-plants-1.jpg" alt="فن اللاتيه" width="400" height="300">
+  </picture></div>
+<div class="res-cell"><picture>
+    <source srcset="assets/img/photos/latte-plants-1.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/latte-plants-1.jpg" alt="فن اللاتيه" width="400" height="300">
+  </picture></div>
+      <div class="res-cell"><picture>
+    <source srcset="assets/img/photos/cinnamon-rolls-2.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/cinnamon-rolls-2.jpg" alt="معجنات طازجة" width="400" height="300">
+  </picture></div>
+      <div class="res-cell"><picture>
+    <source srcset="assets/img/photos/latte-plants-2.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/latte-plants-2.jpg" alt="ديكور المقهى" width="400" height="300">
+  </picture></div>
+<div class="res-cell"><picture>
+    <source srcset="assets/img/photos/cinnamon-rolls-2.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/cinnamon-rolls-2.jpg" alt="معجنات طازجة" width="400" height="300">
+  </picture></div>
+      <div class="res-cell"><picture>
+    <source srcset="assets/img/photos/empanada.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/empanada.jpg" alt="مخبوزات طازجة" width="400" height="300">
+  </picture></div>
     </div>
   </div>
 </section>
@@ -235,7 +272,10 @@
         <div class="row g-4 text-start">
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/turkish-coffee.png" alt="قهوة تركي">
+              <picture>
+    <source srcset="assets/img/menu/turkish-coffee.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/turkish-coffee.png" alt="قهوة تركي" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">قهوة تركي</h6>
@@ -246,7 +286,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/french-coffee.png" alt="قهوة فرنساوي">
+              <picture>
+    <source srcset="assets/img/menu/french-coffee.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/french-coffee.png" alt="قهوة فرنساوي" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">قهوة فرنساوي</h6>
@@ -257,7 +300,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/espresso.png" alt="إسبريسو">
+              <picture>
+    <source srcset="assets/img/menu/espresso.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/espresso.png" alt="إسبريسو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">إسبريسو</h6>
@@ -268,7 +314,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/americano.png" alt="أمريكانو">
+              <picture>
+    <source srcset="assets/img/menu/americano.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/americano.png" alt="أمريكانو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">أمريكانو</h6>
@@ -279,7 +328,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/macchiato.png" alt="ماكياتو">
+              <picture>
+    <source srcset="assets/img/menu/macchiato.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/macchiato.png" alt="ماكياتو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">ماكياتو</h6>
@@ -290,7 +342,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/dark-mocha.png" alt="دارك موكا">
+              <picture>
+    <source srcset="assets/img/menu/dark-mocha.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/dark-mocha.png" alt="دارك موكا" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">دارك موكا</h6>
@@ -301,7 +356,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/white-mocha.png" alt="وايت موكا">
+              <picture>
+    <source srcset="assets/img/menu/white-mocha.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/white-mocha.png" alt="وايت موكا" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">وايت موكا</h6>
@@ -312,7 +370,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/latte.png" alt="لاتيه">
+              <picture>
+    <source srcset="assets/img/menu/latte.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/latte.png" alt="لاتيه" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">لاتيه</h6>
@@ -323,7 +384,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/flat-white.png" alt="فلات وايت">
+              <picture>
+    <source srcset="assets/img/menu/flat-white.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/flat-white.png" alt="فلات وايت" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">فلات وايت</h6>
@@ -334,7 +398,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/cappuccino.png" alt="كابتشينو">
+              <picture>
+    <source srcset="assets/img/menu/cappuccino.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/cappuccino.png" alt="كابتشينو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">كابتشينو</h6>
@@ -345,7 +412,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/cortado.png" alt="كورتادو">
+              <picture>
+    <source srcset="assets/img/menu/cortado.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/cortado.png" alt="كورتادو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">كورتادو</h6>
@@ -356,7 +426,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/spanish-latte.png" alt="سبانش لاتيه">
+              <picture>
+    <source srcset="assets/img/menu/spanish-latte.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/spanish-latte.png" alt="سبانش لاتيه" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">سبانش لاتيه</h6>
@@ -367,7 +440,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/caramel-macchiato.png" alt="كراميل ماكياتو">
+              <picture>
+    <source srcset="assets/img/menu/caramel-macchiato.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/caramel-macchiato.png" alt="كراميل ماكياتو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">كراميل ماكياتو</h6>
@@ -378,7 +454,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/tea.png" alt="شاي">
+              <picture>
+    <source srcset="assets/img/menu/tea.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/tea.png" alt="شاي" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">شاي</h6>
@@ -389,7 +468,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/fruit-tea.png" alt="شاي فواكه">
+              <picture>
+    <source srcset="assets/img/menu/fruit-tea.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/fruit-tea.png" alt="شاي فواكه" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">شاي فواكه</h6>
@@ -400,7 +482,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/herbal-tea.png" alt="أعشاب">
+              <picture>
+    <source srcset="assets/img/menu/herbal-tea.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/herbal-tea.png" alt="أعشاب" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">أعشاب</h6>
@@ -411,7 +496,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/hot-chocolate.png" alt="هوت شوكليت">
+              <picture>
+    <source srcset="assets/img/menu/hot-chocolate.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/hot-chocolate.png" alt="هوت شوكليت" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">هوت شوكليت</h6>
@@ -422,7 +510,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/hot-white-chocolate.png" alt="هوت وايت شوكليت">
+              <picture>
+    <source srcset="assets/img/menu/hot-white-chocolate.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/hot-white-chocolate.png" alt="هوت وايت شوكليت" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">هوت وايت شوكليت</h6>
@@ -439,7 +530,10 @@
         <div class="row g-4 text-start">
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/vanilla-shake.png" alt="ميلك فانيليا">
+              <picture>
+    <source srcset="assets/img/menu/vanilla-shake.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/vanilla-shake.png" alt="ميلك فانيليا" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">ميلك فانيليا</h6>
@@ -450,7 +544,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/lotus-shake.png" alt="ميلك لوتس">
+              <picture>
+    <source srcset="assets/img/menu/lotus-shake.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/lotus-shake.png" alt="ميلك لوتس" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">ميلك لوتس</h6>
@@ -461,7 +558,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/oreo-shake.png" alt="ميلك أوريو">
+              <picture>
+    <source srcset="assets/img/menu/oreo-shake.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/oreo-shake.png" alt="ميلك أوريو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">ميلك أوريو</h6>
@@ -472,7 +572,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/nutella-shake.png" alt="ميلك نوتيلا">
+              <picture>
+    <source srcset="assets/img/menu/nutella-shake.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/nutella-shake.png" alt="ميلك نوتيلا" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">ميلك نوتيلا</h6>
@@ -483,7 +586,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/pistachio-shake.png" alt="ميلك بستاشيو">
+              <picture>
+    <source srcset="assets/img/menu/pistachio-shake.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/pistachio-shake.png" alt="ميلك بستاشيو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">ميلك بستاشيو</h6>
@@ -494,7 +600,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/blue-strawberry-shake.png" alt="ميلك بلو فراولة">
+              <picture>
+    <source srcset="assets/img/menu/blue-strawberry-shake.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/blue-strawberry-shake.png" alt="ميلك بلو فراولة" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">ميلك بلو فراولة</h6>
@@ -511,7 +620,10 @@
         <div class="row g-4 text-start">
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/ice-cola.png" alt="آيس كولا">
+              <picture>
+    <source srcset="assets/img/menu/ice-cola.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/ice-cola.png" alt="آيس كولا" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">آيس كولا</h6>
@@ -522,7 +634,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/iced-americano.png" alt="آيس أمريكانو">
+              <picture>
+    <source srcset="assets/img/menu/iced-americano.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/iced-americano.png" alt="آيس أمريكانو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">آيس أمريكانو</h6>
@@ -533,7 +648,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/iced-mocha.png" alt="آيس موكا">
+              <picture>
+    <source srcset="assets/img/menu/iced-mocha.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/iced-mocha.png" alt="آيس موكا" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">آيس موكا</h6>
@@ -544,7 +662,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/iced-white-mocha.png" alt="آيس وايت موكا">
+              <picture>
+    <source srcset="assets/img/menu/iced-white-mocha.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/iced-white-mocha.png" alt="آيس وايت موكا" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">آيس وايت موكا</h6>
@@ -555,7 +676,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/iced-caramel-macchiato.png" alt="آيس كراميل ماكياتو">
+              <picture>
+    <source srcset="assets/img/menu/iced-caramel-macchiato.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/iced-caramel-macchiato.png" alt="آيس كراميل ماكياتو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">آيس كراميل ماكياتو</h6>
@@ -566,7 +690,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/iced-pistachio-latte.png" alt="آيس بستاشيو لاتيه">
+              <picture>
+    <source srcset="assets/img/menu/iced-pistachio-latte.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/iced-pistachio-latte.png" alt="آيس بستاشيو لاتيه" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">آيس بستاشيو لاتيه</h6>
@@ -577,7 +704,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/classic-mojito.png" alt="كلاسيك موهيتو">
+              <picture>
+    <source srcset="assets/img/menu/classic-mojito.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/classic-mojito.png" alt="كلاسيك موهيتو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">كلاسيك موهيتو</h6>
@@ -588,7 +718,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/passion-blue.png" alt="باشن بلو">
+              <picture>
+    <source srcset="assets/img/menu/passion-blue.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/passion-blue.png" alt="باشن بلو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">باشن بلو</h6>
@@ -599,7 +732,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/blue-hawaii.png" alt="بلو هاواي">
+              <picture>
+    <source srcset="assets/img/menu/blue-hawaii.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/blue-hawaii.png" alt="بلو هاواي" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">بلو هاواي</h6>
@@ -610,7 +746,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/rose-latte.png" alt="روز لاتيه">
+              <picture>
+    <source srcset="assets/img/menu/rose-latte.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/rose-latte.png" alt="روز لاتيه" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">روز لاتيه</h6>
@@ -621,7 +760,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/peach-honey-smoothie.png" alt="سموذي خوخ عسل">
+              <picture>
+    <source srcset="assets/img/menu/peach-honey-smoothie.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/peach-honey-smoothie.png" alt="سموذي خوخ عسل" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">سموذي خوخ عسل</h6>
@@ -632,7 +774,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/mango-smoothie.png" alt="سموذي مانجو">
+              <picture>
+    <source srcset="assets/img/menu/mango-smoothie.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/mango-smoothie.png" alt="سموذي مانجو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">سموذي مانجو</h6>
@@ -643,7 +788,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/apple-smoothie.png" alt="سموذي تفاح">
+              <picture>
+    <source srcset="assets/img/menu/apple-smoothie.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/apple-smoothie.png" alt="سموذي تفاح" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">سموذي تفاح</h6>
@@ -654,7 +802,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/custom-smoothie.png" alt="سموذي حسب اختيارك">
+              <picture>
+    <source srcset="assets/img/menu/custom-smoothie.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/custom-smoothie.png" alt="سموذي حسب اختيارك" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">سموذي حسب اختيارك</h6>
@@ -665,7 +816,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/strawberry-guava-juice.png" alt="عصير فراولة / جوافة">
+              <picture>
+    <source srcset="assets/img/menu/strawberry-guava-juice.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/strawberry-guava-juice.png" alt="عصير فراولة / جوافة" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">عصير فراولة / جوافة</h6>
@@ -676,7 +830,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/lemon-mint-juice.png" alt="عصير ليمون / نعناع">
+              <picture>
+    <source srcset="assets/img/menu/lemon-mint-juice.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/lemon-mint-juice.png" alt="عصير ليمون / نعناع" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">عصير ليمون / نعناع</h6>
@@ -687,7 +844,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/banana-juice.png" alt="عصير موز">
+              <picture>
+    <source srcset="assets/img/menu/banana-juice.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/banana-juice.png" alt="عصير موز" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">عصير موز</h6>
@@ -698,7 +858,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/avocado-juice.png" alt="عصير أفوكادو">
+              <picture>
+    <source srcset="assets/img/menu/avocado-juice.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/avocado-juice.png" alt="عصير أفوكادو" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">عصير أفوكادو</h6>
@@ -709,7 +872,10 @@
           </div>
           <div class="col-sm-6 col-lg-4">
             <div class="menu-card">
-              <img src="assets/img/menu/tamarind.png" alt="تمر هندي">
+              <picture>
+    <source srcset="assets/img/menu/tamarind.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/menu/tamarind.png" alt="تمر هندي" width="300" height="190">
+  </picture>
               <div class="menu-card-body">
                 <div class="d-flex justify-content-between align-items-start gap-2">
                   <h6 class="mb-1">تمر هندي</h6>
@@ -734,11 +900,26 @@
       </div>
     </div>
     <div class="row g-3">
-      <div class="col-6 col-md-2"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/latte-plants-1.jpg" style="height:220px;"><img src="assets/img/photos/latte-plants-1.jpg" alt="معرض"></a></div>
-      <div class="col-6 col-md-2"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/turkish-coffee-2.jpg" style="height:220px;"><img src="assets/img/photos/turkish-coffee-2.jpg" alt="معرض"></a></div>
-      <div class="col-12 col-md-4"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/coffee-grounds.jpg" style="height:220px;"><img src="assets/img/photos/coffee-grounds.jpg" alt="معرض"></a></div>
-      <div class="col-6 col-md-2"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/cupcake-2.jpg" style="height:220px;"><img src="assets/img/photos/cupcake-2.jpg" alt="معرض"></a></div>
-      <div class="col-6 col-md-2"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/cinnamon-rolls-1.jpg" style="height:220px;"><img src="assets/img/photos/cinnamon-rolls-1.jpg" alt="معرض"></a></div>
+      <div class="col-6 col-md-2"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/latte-plants-1.jpg" style="height:220px;"><picture>
+    <source srcset="assets/img/photos/latte-plants-1.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/latte-plants-1.jpg" alt="معرض" width="400" height="300">
+  </picture></a></div>
+      <div class="col-6 col-md-2"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/turkish-coffee-2.jpg" style="height:220px;"><picture>
+    <source srcset="assets/img/photos/turkish-coffee-2.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/turkish-coffee-2.jpg" alt="معرض" width="400" height="300">
+  </picture></a></div>
+      <div class="col-12 col-md-4"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/coffee-grounds.jpg" style="height:220px;"><picture>
+    <source srcset="assets/img/photos/coffee-grounds.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/coffee-grounds.jpg" alt="معرض" width="400" height="300">
+  </picture></a></div>
+      <div class="col-6 col-md-2"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/cupcake-2.jpg" style="height:220px;"><picture>
+    <source srcset="assets/img/photos/cupcake-2.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/cupcake-2.jpg" alt="معرض" width="400" height="300">
+  </picture></a></div>
+      <div class="col-6 col-md-2"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/cinnamon-rolls-1.jpg" style="height:220px;"><picture>
+    <source srcset="assets/img/photos/cinnamon-rolls-1.webp" type="image/webp">
+    <img loading="lazy" src="assets/img/photos/cinnamon-rolls-1.jpg" alt="معرض" width="400" height="300">
+  </picture></a></div>
     </div>
   </div>
 </section>
@@ -815,7 +996,7 @@
 
 <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
 
-<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script defer src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script defer src="assets/js/main.js"></script>
 </body>
 </html>
