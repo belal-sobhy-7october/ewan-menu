@@ -127,3 +127,48 @@ html[dir="rtl"] .back-to-top { right: auto; left: 1.5rem; }
 .placeholder-card .menu-card-body p,
 .placeholder-card .menu-price { opacity: 0.55; }
 
+/* ============ Price list (no-photo categories: milkshake / cold drinks) ============ */
+.price-list {
+  max-width: 640px;
+  background: #fff;
+  border: 1px solid var(--tan-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  padding: 2rem 2.25rem;
+  text-align: right;
+}
+.price-list-title {
+  font-family: 'Cairo', var(--font-display);
+  font-weight: 800;
+  color: var(--brown);
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 2px solid var(--tan-light);
+}
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.55rem 0;
+  font-family: 'Cairo', var(--font-body);
+}
+.price-name {
+  color: var(--brown);
+  font-weight: 700;
+  font-size: 1.02rem;
+  white-space: nowrap;
+}
+.price-leader {
+  flex: 1 1 auto;
+  border-bottom: 2px dotted var(--tan-light);
+  transform: translateY(-0.25rem);
+}
+.price-value {
+  color: var(--brown-deep, var(--brown));
+  font-weight: 800;
+  font-size: 1.02rem;
+  white-space: nowrap;
+}
+
