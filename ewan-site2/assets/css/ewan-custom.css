@@ -1,0 +1,129 @@
+/* =============================================================
+   Ewan (إيوان) — Arabic + right-to-left layout fixes only.
+   This file does NOT change the template's design, structure or
+   copy — it only mirrors positioning so RTL renders correctly,
+   and sizes the logo image. Edit colors in style.css (:root).
+   ============================================================= */
+
+html[dir="rtl"] body {
+  font-family: 'Cairo', var(--font-body);
+}
+html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] h3,
+html[dir="rtl"] h4, html[dir="rtl"] h5, html[dir="rtl"] h6 {
+  font-family: 'Cairo', var(--font-display);
+  font-weight: 700;
+}
+
+/* Logo image sizing (navbar + footer) */
+.brand-logo-img { display: inline-flex; align-items: center; }
+.brand-logo-img img { height: 52px; width: auto; }
+.footer-brocele .brand-logo-img img { height: 60px; filter: none; }
+@media (max-width: 991.98px) {
+  .brand-logo-img img { height: 44px; }
+}
+
+/* Eyebrow / buttons: undo LTR letter-spacing + uppercase, awkward for Arabic */
+html[dir="rtl"] .eyebrow { letter-spacing: 0; text-transform: none; }
+html[dir="rtl"] .btn { letter-spacing: 0; }
+
+/* Button arrow icon: sits after the text, mirror it for RTL reading direction */
+html[dir="rtl"] .btn-arrow { margin-right: 0.4rem; margin-left: 0; transform: scaleX(-1); display: inline-block; }
+
+/* Input icons: move from left side to right side of the field */
+html[dir="rtl"] .input-icon i { left: auto; right: 1.1rem; }
+html[dir="rtl"] .input-icon .form-control { padding-left: 1rem; padding-right: 2.6rem; }
+
+/* Newsletter pill form */
+html[dir="rtl"] .newsletter-form .form-control {
+  border-radius: 0 50rem 50rem 0;
+  border-right: 1px solid var(--tan-light);
+  border-left: none;
+}
+html[dir="rtl"] .newsletter-form .btn {
+  border-radius: 50rem 0 0 50rem;
+}
+
+/* Hero gift card: mirror to the other side of the cup */
+html[dir="rtl"] .gift-card { right: auto; left: -1rem; text-align: right; }
+
+/* Carousel controls */
+html[dir="rtl"] .drink-band .carousel-control-prev { left: auto; right: 0.5rem; }
+html[dir="rtl"] .drink-band .carousel-control-next { right: auto; left: 0.5rem; }
+
+/* Back-to-top button */
+html[dir="rtl"] .back-to-top { right: auto; left: 1.5rem; }
+
+/* ============ Full menu grid (tabs + item cards) ============ */
+.menu-tabs .nav-link {
+  font-family: 'Cairo', var(--font-body);
+  font-weight: 700;
+  color: var(--brown);
+  background: #fff;
+  border: 1px solid var(--tan-light);
+  border-radius: 50rem;
+  padding: 0.6rem 1.6rem;
+  margin: 0 0.35rem;
+}
+.menu-tabs .nav-link.active {
+  background: var(--brown);
+  color: #fff;
+  border-color: var(--brown);
+}
+
+/* ============ Standalone Logo (Fixed) ============ */
+.standalone-logo {
+  position: fixed;
+  top: 1.2rem;
+  left: 1.2rem;
+  z-index: 1050;
+  display: inline-flex;
+  align-items: center;
+}
+.standalone-logo img {
+  height: 60px;
+  width: auto;
+}
+@media (max-width: 767.98px) {
+  .standalone-logo img {
+    height: 44px;
+  }
+}
+
+.menu-card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.menu-card img { width: 100%; height: 190px; object-fit: cover; }
+.menu-card-body { padding: 1.25rem; flex-grow: 1; display: flex; flex-direction: column; }
+.menu-card-body h6 { font-family: 'Cairo', var(--font-display); font-weight: 700; color: var(--brown); font-size: 1.05rem; }
+.menu-card-body p { color: var(--ink-soft); font-size: 0.88rem; }
+.menu-price {
+  font-family: 'Cairo', var(--font-body);
+  font-weight: 800;
+  color: var(--brown-deep, var(--brown));
+  white-space: nowrap;
+}
+
+/* Placeholder cards: obvious "drop your own photo here" slots */
+.menu-card.placeholder-card { background: var(--tan-light, #f4ece1); border: 1.5px dashed var(--brown); }
+.menu-card-photo-placeholder {
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  color: var(--brown);
+  opacity: 0.6;
+}
+.menu-card-photo-placeholder i { font-size: 2rem; }
+.menu-card-photo-placeholder span { font-size: 0.8rem; font-weight: 600; }
+.placeholder-card .menu-card-body h6,
+.placeholder-card .menu-card-body p,
+.placeholder-card .menu-price { opacity: 0.55; }
+

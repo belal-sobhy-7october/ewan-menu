@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>إيوان مقهى ومطعم | قهوة يدوية ومخبوزات طازجة</title>
+<meta name="description" content="إيوان مقهى ومطعم — مشروبات واعية، معجنات طازجة، وتجربة مقهى دافئة في الحي. تصفح قائمتنا من المشروبات والمخبوزات الطازجة.">
+
+<link rel="icon" href="assets/img/mascot.png" type="image/png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+<!-- Template CSS -->
+<link rel="stylesheet" href="assets/css/style.css?v=1.1">
+<!-- Ewan: Arabic + RTL layout fixes only -->
+<link rel="stylesheet" href="assets/css/ewan-custom.css?v=1.0">
+</head>
+<body>
+
+<!-- ============ STANDALONE LOGO (Fixed top-left in RTL = top-right visually) ============ -->
+<a href="index.html" class="brand-logo-img standalone-logo" aria-label="إيوان - الرئيسية">
+  <img src="assets/img/ewan-logo.png" alt="إيوان">
+</a>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="pattern-layer"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-4">
+        <h1 class="section-title" style="font-size:clamp(2.6rem,5vw,3.6rem);">مشروبات هادئة لراحة البال</h1>
+        <p class="mb-4">حبوب محمصة على مهل، لاتيه بحليب الشوفان، وقائمة مبنية حول أرابيكا فاخرة بنسبة 100%. إيوان هو زرّ التوقف المؤقت في حيّك — تعال واجلس معنا.</p>
+        <a href="#menu" class="btn btn-brand">تصفح المنيو <span class="btn-arrow"><i class="bi bi-arrow-up-right"></i></span></a>
+      </div>
+
+      <div class="col-lg-4">
+<div class="hero-cup-wrap text-center position-relative">
+  <div class="cup-backdrop"></div>
+  <img src="assets/img/hero-cup.png" alt="كوب القهوة المميز من إيوان" class="cup">
+  <img src="assets/img/illustrations/bean-2.png" alt="" class="float-bean d-none d-md-block" style="width:60px; left:6%; bottom:8%; animation-delay:.4s;">
+</div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="d-flex flex-column gap-4">
+          <div class="feature-list-item">
+            <span class="icon-circle tan"><i class="bi bi-cup-hot"></i></span>
+            <div>
+              <h6>١٠٠٪ فاخر</h6>
+              <p>لاتيه خفيف باستخدام حبوب أرابيكا فاخرة بنسبة 100%.</p>
+            </div>
+          </div>
+          <div class="feature-list-item">
+            <span class="icon-circle tan"><i class="bi bi-flower2"></i></span>
+            <div>
+              <h6>خالٍ من السكر</h6>
+              <p>متوفر الآن بدون أي سكر مضاف.</p>
+            </div>
+          </div>
+          <div class="feature-list-item">
+            <span class="icon-circle tan"><i class="bi bi-snow2"></i></span>
+            <div>
+              <h6>كلاسيكيات باردة</h6>
+              <p>بإطراء من قهوتنا الباردة بنكهة الكرز.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DRINK CAROUSEL BAND ============ -->
+<section class="pb-3 pt-5">
+  <div class="container">
+    <div class="drink-band">
+      <div id="drinkCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row text-center gy-4">
+<div class="col-md-4 drink-item">
+  <div class="drink-thumb"><img src="assets/img/hero-cup.png" alt="كابتشينو مثلج"></div>
+  <h6>كابتشينو مثلج</h6>
+</div>
+<div class="col-md-4 drink-item">
+  <div class="drink-thumb"><img src="assets/img/hero-cup.png" alt="كابتشينو بالتوت"></div>
+  <h6>كابتشينو بالتوت</h6>
+</div>
+<div class="col-md-4 drink-item">
+  <div class="drink-thumb"><img src="assets/img/hero-cup.png" alt="ماكياتو الكراميل"></div>
+  <h6>ماكياتو الكراميل</h6>
+</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row text-center gy-4">
+<div class="col-md-4 drink-item">
+  <div class="drink-thumb"><img src="assets/img/hero-cup.png" alt="فلات وايت"></div>
+  <h6>فلات وايت</h6>
+</div>
+<div class="col-md-4 drink-item">
+  <div class="drink-thumb"><img src="assets/img/hero-cup.png" alt="موكا مميزة"></div>
+  <h6>موكا مميزة</h6>
+</div>
+<div class="col-md-4 drink-item">
+  <div class="drink-thumb"><img src="assets/img/hero-cup.png" alt="قهوة تركي"></div>
+  <h6>قهوة تركي</h6>
+</div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#drinkCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#drinkCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS STEPS ============ -->
+<section class="section">
+  <div class="container">
+    <div class="d-flex align-items-center gap-2 gap-md-4">
+      <img src="assets/img/illustrations/barista-pour-2.png" alt="" class="process-cap-figure d-none d-md-block">
+      <div class="process-strip flex-grow-1 justify-content-center">
+        <div class="polaroid" style="--rot:-4deg;">
+          <span class="step-num">1</span>
+          <img src="assets/img/photos/roasting.jpg" alt="التحميص">
+          <h6>التحميص</h6>
+          <p>يُحمَّص يومياً بكميات صغيرة.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="polaroid" style="--rot:3deg;">
+          <span class="step-num">2</span>
+          <img src="assets/img/photos/coffee-grounds.jpg" alt="الطحن">
+          <h6>الطحن</h6>
+          <p>يُطحن طازجاً، كوباً بكوب.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="polaroid" style="--rot:-3deg;">
+          <span class="step-num">3</span>
+          <img src="assets/img/photos/pourover.jpg" alt="التحضير">
+          <h6>التحضير</h6>
+          <p>تحضير بطيء بطريقة الصب اليدوي.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="polaroid" style="--rot:4deg;">
+          <span class="step-num">4</span>
+          <img src="assets/img/photos/turkish-coffee-1.jpg" alt="التقديم">
+          <h6>التقديم</h6>
+          <p>يُقدَّم بلمسة من الحب.</p>
+        </div>
+      </div>
+      <img src="assets/img/illustrations/barista-pour-3.png" alt="" class="process-cap-figure d-none d-md-block">
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT WE OFFER ============ -->
+<section class="section bg-cream-soft">
+  <div class="container text-center">
+    <p class="eyebrow justify-content-center">ماذا نقدّم</p>
+    <h2 class="section-title mx-auto">كل ما يحتاجه صباح جميل</h2>
+    <p class="section-lead mx-auto mb-5">من حبوب البن أحادية المصدر إلى المعجنات الزبدية، كل صنف على منضدتنا صُنع ليجعلك تتمهّل قليلاً.</p>
+    <div class="row gy-5">
+      <div class="col-6 col-lg-3 offer-item">
+        <span class="icon-circle lg"><i class="bi bi-cup-straw"></i></span>
+        <h5>تشكيلة القهوة</h5>
+        <p>اثنتا عشرة تحميصة أحادية المصدر، تُحضَّر بالطريقة التي تفضلها.</p>
+      </div>
+      <div class="col-6 col-lg-3 offer-item">
+        <span class="icon-circle lg"><i class="bi bi-moisture"></i></span>
+        <h5>حبوب البن</h5>
+        <p>خذ خلطتنا الخاصة معك للمنزل بالكيس.</p>
+      </div>
+      <div class="col-6 col-lg-3 offer-item">
+        <span class="icon-circle lg"><i class="bi bi-egg-fried"></i></span>
+        <h5>المعجنات</h5>
+        <p>تُخبز طازجة كل صباح، وتنفد بحلول الظهر.</p>
+      </div>
+      <div class="col-6 col-lg-3 offer-item">
+        <span class="icon-circle lg"><i class="bi bi-bag-check"></i></span>
+        <h5>اطلب للخارج</h5>
+        <p>اطلب مسبقاً وتجاوز طابور الانتظار تماماً.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESERVATION PHOTO GRID ============ -->
+<section class="section">
+  <div class="container">
+    <div class="res-grid">
+      <div class="res-cell"><img src="assets/img/photos/latte-plants-1.jpg" alt="فن اللاتيه"></div>
+<div class="res-cell"><img src="assets/img/photos/latte-plants-1.jpg" alt="فن اللاتيه"></div>
+      <div class="res-cell"><img src="assets/img/photos/cinnamon-rolls-2.jpg" alt="معجنات طازجة"></div>
+      <div class="res-cell"><img src="assets/img/photos/latte-plants-2.jpg" alt="ديكور المقهى"></div>
+<div class="res-cell"><img src="assets/img/photos/cinnamon-rolls-2.jpg" alt="معجنات طازجة"></div>
+      <div class="res-cell"><img src="assets/img/photos/empanada.jpg" alt="مخبوزات طازجة"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ المنيو الكامل ============ -->
+<section class="section" id="menu">
+  <div class="container text-center">
+    <p class="eyebrow justify-content-center">قائمتنا</p>
+    <h2 class="section-title">يُحضَّر طازجاً من أجلك</h2>
+    <p class="section-lead mx-auto mb-5">من المشروبات الساخنة والباردة إلى المخبوزات الطازجة — إليك ما هو معروض على المنضدة اليوم.</p>
+
+    <ul class="nav nav-pills menu-tabs justify-content-center mb-5" id="menuTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tab-drinks-btn" data-bs-toggle="pill" data-bs-target="#tab-drinks" type="button" role="tab">المشروبات</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-food-btn" data-bs-toggle="pill" data-bs-target="#tab-food" type="button" role="tab">المخبوزات والأكل</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="menuTabsContent">
+      <!-- المشروبات -->
+      <div class="tab-pane fade show active" id="tab-drinks" role="tabpanel">
+        <div class="row g-4 text-start">
+          <div class="col-sm-6 col-lg-4">
+<div class="menu-card">
+  <img src="assets/img/photos/turkish-coffee-1.jpg" alt="قهوة تركية">
+  <div class="menu-card-body">
+    <div class="d-flex justify-content-between align-items-start gap-2">
+      <h6 class="mb-1">قهوة تركية</h6>
+      <span class="menu-price">3.00$</span>
+    </div>
+    <p class="mb-3">تُحضَّر على الطريقة التقليدية، غنية بالنكهة.</p>
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+<div class="menu-card">
+  <img src="assets/img/photos/latte-plants-1.jpg" alt="لاتيه">
+  <div class="menu-card-body">
+    <div class="d-flex justify-content-between align-items-start gap-2">
+      <h6 class="mb-1">لاتيه</h6>
+      <span class="menu-price">2.75$</span>
+    </div>
+    <p class="mb-3">إسبريسو ناعم مع حليب مبخّر وفن لاتيه.</p>
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card">
+              <img src="assets/img/photos/pourover.jpg" alt="قهوة مقطرة يدوياً">
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">قهوة مقطرة يدوياً</h6>
+                  <span class="menu-price">3.25$</span>
+                </div>
+                <p class="mb-3">تحضير بطيء بطريقة الصب اليدوي، نكهة نظيفة.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card">
+              <img src="assets/img/photos/turkish-coffee-2.jpg" alt="قهوة تركية بالهيل">
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">قهوة تركية بالهيل</h6>
+                  <span class="menu-price">3.00$</span>
+                </div>
+                <p class="mb-3">نفس الوصفة الأصلية بلمسة من الهيل.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card">
+              <img src="assets/img/photos/latte-plants-2.jpg" alt="لاتيه بالنعناع">
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">لاتيه بالنعناع</h6>
+                  <span class="menu-price">3.50$</span>
+                </div>
+                <p class="mb-3">لمسة منعشة من النعناع الطازج فوق اللاتيه.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card">
+              <img src="assets/img/hero-cup.png" alt="كابتشينو كلاسيك">
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">كابتشينو كلاسيك</h6>
+                  <span class="menu-price">2.50$</span>
+                </div>
+                <p class="mb-3">توازن مثالي بين الإسبريسو ورغوة الحليب.</p>
+                
+              </div>
+            </div>
+          </div>
+          <!-- اتركهم فارغين لحد ما تصور أصنافك الخاصة: غيّر الصورة والاسم والسعر بس -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card placeholder-card">
+              <div class="menu-card-photo-placeholder"><i class="bi bi-camera"></i><span>ضع صورتك هنا</span></div>
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">اسم الصنف</h6>
+                  <span class="menu-price">0.00$</span>
+                </div>
+                <p class="mb-3">وصف قصير للصنف.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card placeholder-card">
+              <div class="menu-card-photo-placeholder"><i class="bi bi-camera"></i><span>ضع صورتك هنا</span></div>
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">اسم الصنف</h6>
+                  <span class="menu-price">0.00$</span>
+                </div>
+                <p class="mb-3">وصف قصير للصنف.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- المخبوزات والأكل -->
+      <div class="tab-pane fade" id="tab-food" role="tabpanel">
+        <div class="row g-4 text-start">
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card">
+              <img src="assets/img/photos/croissant-1.jpg" alt="كرواسون بالزبدة">
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">كرواسون بالزبدة</h6>
+                  <span class="menu-price">2.00$</span>
+                </div>
+                <p class="mb-3">طبقات هشّة، يُخبز طازجاً كل صباح.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card">
+              <img src="assets/img/photos/sandwich.jpg" alt="ساندوتش الفطار">
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">ساندوتش الفطار</h6>
+                  <span class="menu-price">4.50$</span>
+                </div>
+                <p class="mb-3">محضّر يومياً بمكونات طازجة.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card">
+              <img src="assets/img/photos/empanada.jpg" alt="إمبانادا">
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">إمبانادا</h6>
+                  <span class="menu-price">3.00$</span>
+                </div>
+                <p class="mb-3">عجينة مقرمشة بحشوة شهية.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card">
+              <img src="assets/img/photos/cupcake-1.jpg" alt="كب كيك">
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">كب كيك</h6>
+                  <span class="menu-price">2.25$</span>
+                </div>
+                <p class="mb-3">حلاوة خفيفة تناسب فنجان قهوتك.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card">
+              <img src="assets/img/photos/macarons.jpg" alt="مكرون">
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">مكرون</h6>
+                  <span class="menu-price">3.75$</span>
+                </div>
+                <p class="mb-3">قطع صغيرة ملوّنة بنكهات متعددة.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card">
+              <img src="assets/img/photos/cinnamon-rolls-1.jpg" alt="رول القرفة">
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">رول القرفة</h6>
+                  <span class="menu-price">2.50$</span>
+                </div>
+                <p class="mb-3">ينفد قبل العاشرة صباحاً غالباً.</p>
+                
+              </div>
+            </div>
+          </div>
+          <!-- اتركهم فارغين لحد ما تصور أصنافك الخاصة: غيّر الصورة والاسم والسعر بس -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card placeholder-card">
+              <div class="menu-card-photo-placeholder"><i class="bi bi-camera"></i><span>ضع صورتك هنا</span></div>
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">اسم الصنف</h6>
+                  <span class="menu-price">0.00$</span>
+                </div>
+                <p class="mb-3">وصف قصير للصنف.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="menu-card placeholder-card">
+              <div class="menu-card-photo-placeholder"><i class="bi bi-camera"></i><span>ضع صورتك هنا</span></div>
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start gap-2">
+                  <h6 class="mb-1">اسم الصنف</h6>
+                  <span class="menu-price">0.00$</span>
+                </div>
+                <p class="mb-3">وصف قصير للصنف.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY STRIP ============ -->
+<section class="section pb-4">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <div>
+        <p class="eyebrow mb-1">معرضنا</p>
+        <h2 class="section-title mb-0">الحياة في إيوان</h2>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-6 col-md-2"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/latte-plants-1.jpg" style="height:220px;"><img src="assets/img/photos/latte-plants-1.jpg" alt="معرض"></a></div>
+      <div class="col-6 col-md-2"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/turkish-coffee-2.jpg" style="height:220px;"><img src="assets/img/photos/turkish-coffee-2.jpg" alt="معرض"></a></div>
+      <div class="col-12 col-md-4"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/coffee-grounds.jpg" style="height:220px;"><img src="assets/img/photos/coffee-grounds.jpg" alt="معرض"></a></div>
+      <div class="col-6 col-md-2"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/cupcake-2.jpg" style="height:220px;"><img src="assets/img/photos/cupcake-2.jpg" alt="معرض"></a></div>
+      <div class="col-6 col-md-2"><a href="#" class="gallery-item d-block" data-lightbox data-img="assets/img/photos/cinnamon-rolls-1.jpg" style="height:220px;"><img src="assets/img/photos/cinnamon-rolls-1.jpg" alt="معرض"></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIGHTBOX MODAL ============ -->
+<div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded-xl overflow-hidden">
+      <button type="button" class="btn-close position-absolute top-0 end-0 m-3 bg-white rounded-circle p-2" style="z-index:5;" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="" id="lightboxImg" alt="" class="w-100">
+    </div>
+  </div>
+</div>
+
+<!-- ============ PARTNERS ============ -->
+<section class="pb-5">
+  <div class="container">
+    <div class="row justify-content-center align-items-center g-4 opacity-75">
+      <div class="col-4 col-md-2 text-center"><img src="assets/img/partners/spark.png" alt="وكالة سبارك" class="partner-logo"></div>
+      <div class="col-4 col-md-2 text-center"><img src="assets/img/partners/sato.png" alt="ساتو" class="partner-logo"></div>
+      <div class="col-4 col-md-2 text-center"><img src="assets/img/partners/nightclub.png" alt="نايت كلوب" class="partner-logo"></div>
+      <div class="col-4 col-md-2 text-center"><img src="assets/img/partners/coconut.png" alt="كوكونت كوزمتكس" class="partner-logo"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="pb-5 text-center">
+  <div class="container">
+    <h4 class="font-display mb-3" style="color:var(--brown); font-size:1.6rem;">أخبار طازجة بقدر قهوتنا</h4>
+    <form class="d-flex newsletter-form mx-auto" onsubmit="return false;">
+      <input type="email" class="form-control" placeholder="بريدك الإلكتروني" required>
+      <button type="submit" class="btn btn-brand-dark"><i class="bi bi-send-fill"></i></button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer-brocele pt-5">
+  <div class="container">
+    <div class="row gy-4 pb-4">
+      <div class="col-12 col-lg-3">
+        <h6>اتصل بنا</h6>
+        <p class="mb-1"><a href="tel:+201001854271" class="text-brown">+20 100 185 4271</a></p>
+        <p class="mb-1"><a href="mailto:ewanmansura1@gmail.com" class="text-brown">ewanmansura1@gmail.com</a></p>
+        <p class="mb-0"><a href="https://www.google.com/maps/place/ewan/@31.0453268,31.3671496,17z/data=!3m1!4b1!4m6!3m5!1s0x14f79dfd37e3fa1d:0x4a6fe321af5a4b37!8m2!3d31.0453268!4d31.3645747!16s%2Fg%2F11zdq4l97s" target="_blank" rel="noopener" class="text-brown">شارع فندق مرشال المتفرع من شارع الجمهورية أمام مستشفى الجامعة الرئيسي، المنصورة</a></p>
+      </div>
+      <div class="col-12 col-lg-5 text-center order-first order-lg-0">
+        <a href="index.html" class="brand-logo-img justify-content-center mb-3 d-inline-flex">
+          <img src="assets/img/ewan-logo.png" alt="إيوان" style="height:52px;">
+        </a>
+        <p class="footer-about text-center" style="font-size:0.9rem; color:#4d2c05; max-width:380px; margin:0 auto 1.25rem;">مساحة عمل مشتركة في المنصورة صُممت بحرفية أندلسية وابتكار عصري — يأتي الناس للعمل، ويبقون بسبب الأجواء، ويعودون لأنها تشعر وكأنها ملكهم.</p>
+        <div class="footer-social d-flex justify-content-center gap-2">
+          <a href="https://www.facebook.com/ewancafe.eg/" target="_blank" rel="noopener" aria-label="فيسبوك"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.google.com/maps/place/ewan/@31.0453268,31.3671496,17z/data=!3m1!4b1!4m6!3m5!1s0x14f79dfd37e3fa1d:0x4a6fe321af5a4b37!8m2!3d31.0453268!4d31.3645747!16s%2Fg%2F11zdq4l97s" target="_blank" rel="noopener" aria-label="الموقع على الخريطة"><i class="bi bi-geo-alt"></i></a>
+          <a href="https://api.whatsapp.com/send/?phone=201001854271&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="واتساب"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>معلومات</h6>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>مواعيد العمل</h6>
+        <p class="mb-0">مفتوح على مدار 24 ساعة طوال أيام الأسبوع</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom py-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center">
+      <small>© 2026 إيوان. جميع الحقوق محفوظة.</small>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
